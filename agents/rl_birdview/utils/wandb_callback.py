@@ -66,8 +66,8 @@ class WandbCallback(BaseCallback):
             eval_video_path = (self._video_path / f'eval_{self.model.num_timesteps}.mp4').as_posix()
             avg_ep_stat, ep_events = self.evaluate_policy(self.vec_env, self.model.policy, eval_video_path)
             # log to wandb
-            wandb.log({f'video/{self.model.num_timesteps}': wandb.Video(eval_video_path)},
-                      step=self.model.num_timesteps)
+            # wandb.log({f'video/{self.model.num_timesteps}': wandb.Video(eval_video_path)},
+            #           step=self.model.num_timesteps)
             wandb.log(avg_ep_stat, step=self.model.num_timesteps)
             # save events
             # eval_json_path = (video_path / f'event_{self.model.num_timesteps}.json').as_posix()
@@ -132,8 +132,8 @@ class WandbCallback(BaseCallback):
             encoder.close()
             encoder = None
 
-            wandb.log({f'buffer/{self.model.num_timesteps}': wandb.Video(buffer_video_path)},
-                      step=self.model.num_timesteps)
+            # wandb.log({f'buffer/{self.model.num_timesteps}': wandb.Video(buffer_video_path)},
+            #           step=self.model.num_timesteps)
 
     @staticmethod
     def evaluate_policy(env, policy, video_path, min_eval_steps=3000):
