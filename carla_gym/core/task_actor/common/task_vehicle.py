@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 import weakref
 from .navigation.global_route_planner import GlobalRoutePlanner

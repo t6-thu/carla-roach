@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 import shapely.geometry
 from carla_gym.utils.traffic_light import TrafficLightHandler

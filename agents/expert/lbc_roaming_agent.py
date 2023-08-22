@@ -2,6 +2,8 @@
 import numpy as np
 import logging
 import cv2
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 from omegaconf import OmegaConf
 import copy

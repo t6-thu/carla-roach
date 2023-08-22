@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 import pygame
 import numpy as np
