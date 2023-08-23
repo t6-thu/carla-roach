@@ -1,6 +1,8 @@
 import numpy as np
 import copy
 import weakref
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 from queue import Queue, Empty
 from gym import spaces

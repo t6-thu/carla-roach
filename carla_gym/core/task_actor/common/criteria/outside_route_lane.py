@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 from carla_gym.utils.transforms import cast_angle
 

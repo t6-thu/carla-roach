@@ -5,6 +5,8 @@ Modified from carla/PythonAPI/carla/agents/navigation/global_route_planner.py
 import numpy as np
 import networkx as nx
 
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 
 from .map_utils import get_sampled_topology, RoadOption, vector

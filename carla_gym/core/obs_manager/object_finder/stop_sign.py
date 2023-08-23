@@ -1,4 +1,6 @@
 from gym import spaces
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 from carla_gym.core.obs_manager.obs_manager import ObsManagerBase
 

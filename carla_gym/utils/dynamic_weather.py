@@ -1,5 +1,6 @@
 # modified from https://github.com/carla-simulator/carla/blob/master/PythonAPI/examples/dynamic_weather.py
-
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 import numpy as np
 

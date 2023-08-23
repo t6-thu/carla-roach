@@ -1,5 +1,7 @@
 import numpy as np
 from collections import deque
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 
 from carla_gym.core.obs_manager.object_finder.vehicle import ObsManager as OmVehicle

@@ -1,4 +1,6 @@
 import numpy as np
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 import cv2
 import carla_gym.utils.transforms as trans_utils

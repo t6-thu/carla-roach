@@ -4,6 +4,8 @@ from pathlib import Path
 import socket
 import xml.etree.ElementTree as ET
 import h5py
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 import numpy as np
 import hydra

@@ -1,4 +1,6 @@
 import numpy as np
+import sys
+sys.path.append('/iliad/u/yuchenc/carla/PythonAPI')
 import carla
 from gym import spaces
 import cv2 as cv
