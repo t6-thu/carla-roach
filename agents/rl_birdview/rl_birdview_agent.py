@@ -32,7 +32,7 @@ class RlBirdviewAgent():
                 self._logger.info(f'Resume checkpoint closest to step {wb_ckpt_step}: {f.name}')
 
             f.download(replace=True)
-            run.file('config_agent.yaml').download(replace=True)
+            # run.file('config_agent.yaml').download(replace=True)
             cfg = OmegaConf.load('config_agent.yaml')
             self._ckpt = f.name
         else:
